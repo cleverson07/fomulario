@@ -9,24 +9,43 @@
 <body>
     <h1>teste de fomulario</h1>
     <form action="cadastro.php"  method="get">
-    <p>
-        <label for="isu">Usuario:</label>
-        <input type="text" name="Usuario" id="isu" placeholder="nome completo" maxlength="30" > 
-    </p>
-    <p>
-        <label for="sen">Senha:</label>
-        <input type="password" name="sen" id="sen" placeholder="senha">
-    
-    </p>
-    <p>
-        <label for="imedia">Média</label>
-        <input type="number" name="imedia" id="imedia" required minlength="0" maxlength="5" placeholder="media">
-    </p>
+    <fieldset><legend>Login</legend>
+        <p>
+            <label for="isu">Usuario:</label>
+            <input type="text" name="Usuario" id="isu" placeholder="nome usuario" maxlength="30" >
+        </p>
+        <p>
+            <label for="sen">Senha:</label>
+            <input type="password" name="sen" id="sen" placeholder="senha">
+        
+        </p>
+    </fieldset>
+   <fieldset> <legend>Dados pessoais</legend>
+       <p>
+        <label for="nome">nome</label>
+        <input type="text" name="nome" id="nome" placeholder="nome completo">
+       </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="imedia" id="imedia" required minlength="0" maxlength="5" placeholder="media">
+        </p>
+        <p>
+            <label for="idia">Aniversario</label>
+            <input type="date" name="idia" id="idia">
+        </p>
+        <p>
+            <label for="tel">Telefone</label>
+            <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx">
+        </p>
+   </fieldset>
 
+<fieldset> <legend>Hora</legend>
     <p>
-        <label for="idia">Aniversario</label>
-        <input type="date" name="idia" id="idia">
+        <label for="hora">horario</label>
+        <input type="time" name="hora" id="hora">
     </p>
+</fieldset>
+
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="limpar">
